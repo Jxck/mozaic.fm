@@ -1,0 +1,17 @@
+.hello {
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #0B3C87;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: #FFF;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
