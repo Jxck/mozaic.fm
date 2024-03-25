@@ -4,7 +4,9 @@
   "description": "mozaic.fm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fmt": "npx @biomejs/biome format --write ./src"
+
   },
   "devDependencies": {
     "@biomejs/biome": "1.6.2"
