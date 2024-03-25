@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "fmt": "npx @biomejs/biome format --write ./src",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=$PROJECT_TOKEN"
   },
   "devDependencies": {
     "@biomejs/biome": "1.6.2",
