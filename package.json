@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "mozaic.fm",
   "main": "index.js",
+  "packageManager": "pnpm@8.15.5",
   "scripts": {
+    "setup": "corepack enable pnpm",
     "test": "echo \"Error: no test specified\" && exit 1",
     "fmt": "npx @biomejs/biome format --write ./src",
     "storybook": "storybook dev -p 6006",
