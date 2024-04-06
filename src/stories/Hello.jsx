@@ -3,9 +3,7 @@ import "./hello.css";
 
 export const Hello = ({ label }) => {
 	return (
-		<button
-			className="hello"
-		>
+		<button type="button" className="hello">
 			{label}
 		</button>
 	);
