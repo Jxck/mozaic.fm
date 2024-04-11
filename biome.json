@@ -17,6 +17,6 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"ignore": ["package.json", "global.d.ts", "storybook-static"]
+		"ignore": ["package.json", "global.d.ts", "storybook-static", "dist"]
 	}
 }
