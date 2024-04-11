@@ -2,16 +2,20 @@ import { css } from "hono/css";
 import { createRoute } from "honox/factory";
 import { getEpisodes } from "../model/episodes";
 
-const className = css`
+const main = css`
   font-family: sans-serif;
 `;
+
+const italic = css`
+  font-style: italic;
+`
 
 export default createRoute(async (c) => {
 	const { title, description, episodes } = await getEpisodes();
 	return c.render(
-		<main class={className}>
+		<main class={main}>
 			<h1>{title}</h1>
-			<p>{description}</p>
+			<p class={italic}>{description}</p>
 			<section>
 				<h2>list of episodes</h2>
 				<ul>
