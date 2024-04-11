@@ -8,7 +8,7 @@ const main = css`
 
 const italic = css`
   font-style: italic;
-`
+`;
 
 export default createRoute(async (c) => {
 	const { title, description, episodes } = await getEpisodes();
