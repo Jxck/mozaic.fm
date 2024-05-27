@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 export default async function Page({ params }: { params: { ep: number } }) {
   const { ep } = params
   return (
