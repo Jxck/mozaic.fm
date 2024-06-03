@@ -12,6 +12,7 @@ export default async function Page({
       <h1>{episode.title}</h1>
       <section>{episode.detail}</section>
       <div>
+        {/* biome-ignore lint: use track */}
         <audio controls src={episode.media} />
       </div>
     </main>

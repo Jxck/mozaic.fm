@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import { getEpisodes } from "./model/episodes";
+import styles from "./page.module.css";
 
 export default async function Home() {
   const { title, description, episodes } = await getEpisodes();
@@ -9,7 +9,7 @@ export default async function Home() {
       <h1>{title}</h1>
       <p>{description}</p>
       <div>
-        <a href="https://mozaic.fm" target="_blank">
+        <a href="https://mozaic.fm" target="_blank" rel="noreferrer">
           <Image
             src="/mozaic.svg"
             alt="mozaic logo"
