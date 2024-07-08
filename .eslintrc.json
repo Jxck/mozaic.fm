@@ -1,4 +1,5 @@
 {
+  "ignorePatterns": [".vercel", ".next", ".wrangler"],
   "extends": [
     "next/core-web-vitals",
     "plugin:eslint-plugin-next-on-pages/recommended"
