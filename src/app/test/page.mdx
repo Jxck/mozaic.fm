@@ -1,6 +1,22 @@
-import Episode, { frontmatter as metadata } from './intro.mdx'
+import Episode, { frontmatter as metadata } from "./intro.mdx";
 
 export default function Page() {
-  console.log(metadata)
-  return <Episode />
+  console.log(metadata);
+
+  const { tags, published_at } = metadata
+  function Header({ children }) {
+    return (
+      <>
+        <h1>{children}</h1>
+        <ul>
+          {tags.map((tag) => <li>{tag}</li>)}
+        </ul>
+        <p>published_at: {published_at}</p>
+      </>
+    );
+  }
+  const components = {
+    h1: Header
+  };
+  return <Episode components={components} />;
 }
