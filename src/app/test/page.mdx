@@ -3,15 +3,16 @@ import Episode, { frontmatter as metadata } from "./intro.mdx";
 export default function Page() {
   console.log(metadata);
 
-  const { tags, published_at } = metadata
+  const { audio, tags, published_at } = metadata
   function Header({ children }) {
     return (
       <>
         <h1>{children}</h1>
         <ul>
-          {tags.map((tag) => <li>{tag}</li>)}
+          {tags.map((tag) => <li key={tag}>{tag}</li>)}
         </ul>
         <p>published_at: {published_at}</p>
+        <audio controls={true} src={audio} />
       </>
     );
   }
