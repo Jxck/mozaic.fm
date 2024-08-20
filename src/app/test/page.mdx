@@ -3,7 +3,12 @@ import Episode, { frontmatter as metadata } from "./intro.mdx";
 export default function Page() {
   console.log(metadata);
 
-  const { audio, tags, published_at } = metadata
+  const { audio, tags, guests, published_at } = metadata
+  const guest = Object.entries(guests).map(([name, link]) => {
+    return (
+      <li key={link}><a href={link}>{name}</a></li>
+    )
+  })
   function Header({ children }) {
     return (
       <>
@@ -13,6 +18,9 @@ export default function Page() {
         </ul>
         <p>published_at: {published_at}</p>
         <audio controls={true} src={audio} />
+        <ul>
+          {guest}
+        </ul>
       </>
     );
   }
