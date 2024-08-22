@@ -2,7 +2,8 @@
   "ignorePatterns": [".vercel", ".next", ".wrangler"],
   "extends": [
     "next/core-web-vitals",
-    "plugin:eslint-plugin-next-on-pages/recommended"
+    "plugin:eslint-plugin-next-on-pages/recommended",
+    "plugin:storybook/recommended"
   ],
   "plugins": ["eslint-plugin-next-on-pages"]
 }
