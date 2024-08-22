@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Header.module.css";
+import styles from "./index.module.css";
 
 export default async function Header() {
   return (
