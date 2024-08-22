@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./index.module.css";
 
-export default async function Header() {
+export default function Header() {
   return (
     <header className={styles.header}>
       <h1>
