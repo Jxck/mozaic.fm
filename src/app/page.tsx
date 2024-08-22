@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { getEpisodes } from "./model/episodes";
-import styles from "./page.module.css";
 
 export default async function Home() {
   const { title, description, episodes } = await getEpisodes();
