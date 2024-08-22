@@ -7,7 +7,7 @@ type Props = {
 export default async function Page({ params: { episodes } }: Props) {
   const [ep, file] = episodes;
   const { default: Component, frontmatter } = await import(
-    `@/app/episodes/_contents/${ep}/${file}.mdx`
+    `@/app/episodes/_contents/${ep}/${file.replace(".html", "")}.mdx`
   );
 
   return (
