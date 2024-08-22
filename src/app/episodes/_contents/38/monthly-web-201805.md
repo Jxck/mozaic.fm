@@ -112,6 +112,7 @@ guests:
   - Beyond SPAs: alternative architectures for your PWA
     - https://developers.google.com/web/updates/2018/05/beyond-spa
 - Intents
+
   - Ship: Keyboard lock
     - https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/isXS3f3Tqo8/GPIQi_8oCAAJ
   - **Ship: WebRTC Unified Plan SDP format control flag**
@@ -168,10 +169,12 @@ guests:
     - 仕様のディスカッションをしてる CG は Apple が昨年提案
       - https://webkit.org/blog/7380/next-generation-3d-graphics-on-the-web/
   - **Implement: Layered API infrastructure**
+
     - https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/MFbJuzA5tH4/t6Q-LZHpAgAJ
     - import の URL で pipe を使ってフォールバックできるよう
 
       に
+
   - **Implement: Intervention reports**
     - https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/83uwiEBHMGc/jF8BDFIrCAAJ
     - intervention が発生したことを Reporting API や Reporting Observer で取得する
@@ -212,6 +215,7 @@ guests:
     - https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/HOKWCSaz6Uc/SxzJs-zjAgAJ
   - Site Isolation Status - Preparing for M67
     - https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/-OmY9SSZ2as/YHq4rLB5CAAJ
+
 - Team Weekly Snippet
   - Platform Architecture Team snippet
     - https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/gLqyweZ2EDg/91W5ESFkCAAJ
