@@ -15,13 +15,6 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "ignore": [
-      ".githooks",
-      ".github",
-      ".next",
-      ".vercel",
-      ".wrangler",
-      "node_modules"
-    ]
+    "ignore": [".githooks", ".github", ".next", ".vercel", "node_modules"]
   }
 }

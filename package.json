@@ -11,10 +11,6 @@
     "fmt": "biome format --write . && prettier -w './**/*.{md,yml}'",
     "lint": "biome check . --write && eslint . --fix",
     "check": "pnpm fmt && pnpm lint",
-    "pages:build": "pnpm next-on-pages",
-    "preview": "pnpm pages:build && wrangler pages dev",
-    "deploy": "pnpm pages:build && wrangler pages deploy --branch main",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN"
@@ -56,7 +52,6 @@
     "storybook": "^8.2.9",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.2.0",
-    "vercel": "^37.0.0",
-    "wrangler": "^3.72.1"
+    "vercel": "^37.0.0"
   }
 }
