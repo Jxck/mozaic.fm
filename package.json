@@ -16,7 +16,8 @@
     "deploy": "pnpm pages:build && wrangler pages deploy --branch main",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
