@@ -22,7 +22,7 @@ export default function MediaCard(props: Props) {
           <ul>
             {props.guests.map((guest) => {
               return (
-                <li>
+                <li key={guest.name}>
                   <a href={guest.url.href}>{guest.name}</a>
                 </li>
               );
