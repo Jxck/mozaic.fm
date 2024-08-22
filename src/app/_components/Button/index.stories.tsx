@@ -34,12 +34,3 @@ export const Secondary = {
     onClick: () => {},
   },
 } satisfies Story;
-
-export const CustomType = {
-  args: {
-    type: "submit",
-    valiant: "primary",
-    children: "Submit Button",
-    onClick: () => {},
-  },
-} satisfies Story;
