@@ -16,7 +16,8 @@
     "deploy": "pnpm pages:build && wrangler pages deploy --branch main",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token chpt_dfca01eae484aaa"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
@@ -45,13 +46,14 @@
     "@types/node": "^20.14.15",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "chromatic": "^11.7.1",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.0",
     "eslint-plugin-next-on-pages": "^1.13.2",
     "eslint-plugin-storybook": "^0.8.0",
     "lint-staged": "^15.2.9",
-    "storybook": "^8.1.11",
     "prettier": "^3.3.3",
+    "storybook": "^8.1.11",
     "typescript": "^5.5.4",
     "vercel": "^34.4.0",
     "wrangler": "^3.71.0"
