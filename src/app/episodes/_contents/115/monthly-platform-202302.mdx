@@ -621,7 +621,8 @@ guests:
   - https://docs.google.com/document/d/1qXUf4QRTbexUj0fg2sgYTxWwOT2v_q7lmjR282BOWLU/edit
   - https://twitter.com/mozaicfm/status/1629104591261564928
 - **Problems with import assertions for module types and a possible general solution + downgrade to Stage 2**
-  - import assertions で assert { type: "css" } とかしても実際は script として読み込まれる
+  - import assertions で assert { type: "css" } とかしても実際は script として読み込まれ
+    る
   - すると CSP の script-src が適用されるが、それでいいのか?
   - という HTML の issue から始まった
   - assert が制御してるのは読み込みと評価のみで、どう取得するかは定義してない
@@ -646,7 +647,7 @@ guests:
 
 #### Proposals Diff
 
-- https://github.com/tc39/proposals/compare/main@{2023-01-01}...main@{2023-02-01}
+- https://github.com/tc39/proposals/compare/main@%7B2023-01-01%7D...main@%7B2023-02-01%7D
 - https://tc39.github.io/beta/
 - 0->1
 - 1->2
@@ -960,7 +961,8 @@ guests:
     - Permission Workshop のレポート
     - 台湾デジタル発展部が W3C 参加
 - TC39
-  - import assertion の assert が取得方法を定義してないことにより見直しで Stage 2 に down
+  - import assertion の assert が取得方法を定義してないことにより見直しで Stage 2 に dow
+    n
   - Prototype 汚染を防ぐために文字列アクセスできなくするモードの提案
   - コンセンサスの取り方の見直しとドキュメント化
 - IETF
