@@ -621,7 +621,7 @@ guests:
   - https://docs.google.com/document/d/1qXUf4QRTbexUj0fg2sgYTxWwOT2v_q7lmjR282BOWLU/edit
   - https://twitter.com/mozaicfm/status/1629104591261564928
 - **Problems with import assertions for module types and a possible general solution + downgrade to Stage 2**
-  - import assertions で assert { type: "css" } とかしても実際は script として読み込まれ
+  - `import assertions で assert { type: "css" }` とかしても実際は script として読み込まれ
     る
   - すると CSP の script-src が適用されるが、それでいいのか?
   - という HTML の issue から始まった
