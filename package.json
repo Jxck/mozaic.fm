@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@9.7.1",
+  "type": "module",
   "scripts": {
     "setup": "git config --local core.hooksPath .githooks && corepack enable pnpm",
     "dev": "next dev",
@@ -17,12 +18,17 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN"
+    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN",
+    "build-style-dictionary": "style-dictionary build -c ./style-dictionary.config.js --verbose",
+    "token-transform": "token-transformer designTokens/tokens.json designTokens/_transformedTokens.json GlobalToken,Semantic Token/light,Semantic Token/dark"
   },
   "dependencies": {
+    "@tokens-studio/sd-transforms": "^1.2.3",
     "next": "14.2.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "style-dictionary": "^4.0.1",
+    "token-transformer": "^0.0.33"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
