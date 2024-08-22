@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ES2023",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,8 +20,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "types": ["@cloudflare/workers-types/2023-07-01"]
+    }
   },
   "include": [
     "next-env.d.ts",

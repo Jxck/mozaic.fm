@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { getEpisodes } from "./model/episodes";
+import Link from "next/link";
+import { getEpisodes } from "./episodes/_utils/getEpisodes";
 
 export default async function Home() {
-  const { title, description, episodes } = await getEpisodes();
+  const episodes = await getEpisodes();
+  // const tags = new Set(episodes.flatMap((episode) => episode.tags));
+
   return (
     <>
       <header>
-        <h1>{title}</h1>
         <div>
           <a href="https://mozaic.fm" target="_blank" rel="noreferrer">
             <Image
@@ -31,11 +33,6 @@ export default async function Home() {
         </search>
       </header>
       <main>
-        <section>
-          <p>
-            &gt; {description} by <a href="https://jxck.io">@jxck</a>
-          </p>
-        </section>
         <section>
           <nav>
             <ul>
@@ -64,9 +61,9 @@ export default async function Home() {
           <ul>
             {episodes.map((episode) => {
               return (
-                <li key={episode.url}>
-                  <a href={episode.url}>{episode.title}</a>
-                  <p>{episode.detail}</p>
+                <li key={episode.title}>
+                  <Link href={episode.path}>{episode.title}</Link>
+                  <p>{episode.description}</p>
                   <p>published_at: {episode.published_at}</p>
                   <button type="button">Detail</button>
                   <button type="button">Play</button>

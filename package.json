@@ -8,8 +8,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "vitest",
     "fmt": "biome format --write . && prettier -w './**/*.{md,yml}'",
-    "lint": "biome check . --write && eslint . --fix",
+    "lint": "biome check . --write && eslint src/app --fix",
     "check": "pnpm fmt && pnpm lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -20,6 +21,7 @@
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.6",
     "@types/mdx": "^2.0.13",
+    "glob": "^11.0.0",
     "next": "14.2.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -52,6 +54,8 @@
     "storybook": "^8.2.9",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.2.0",
-    "vercel": "^37.0.0"
+    "unist-util-visit": "^5.0.0",
+    "vercel": "^37.0.0",
+    "vitest": "^2.0.5"
   }
 }
