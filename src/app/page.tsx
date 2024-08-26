@@ -5,8 +5,6 @@ import { getEpisodes } from "./episodes/_utils/getEpisodes";
 
 export default async function Home() {
   const episodes = await getEpisodes();
-  // const tags = new Set(episodes.flatMap((episode) => episode.tags));
-
   return (
     <>
       <Header />
