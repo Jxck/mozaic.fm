@@ -12,22 +12,30 @@ export async function getEpisodes() {
         throw new Error("invalid episode path");
       }
 
-      const { ep, file } = episodeMeta.groups as { ep: string; file: string };
-      const { frontmatter } = await import(
+      const { ep, file } = episodeMeta.groups as {
+        ep: string;
+        file: `/episodes/${string}/${string}`;
+      };
+      const { frontmatter } = (await import(
         `@/app/episodes/_contents/${ep}/${file}.mdx`
-      );
+      )) as { frontmatter: Frontmatter };
 
       return {
         ...frontmatter,
+        episode: Number(ep),
         path: `/episodes/${ep}/${file}`,
-      } as Frontmatter & {
-        path: `/episodes/${typeof ep}/${typeof file}`;
       };
     }),
   );
 
-  return episodes.sort(
-    (a, b) =>
-      new Date(b.published_at).getTime() - new Date(a.published_at).getTime(),
-  );
+  return episodes.sort((a, b) => {
+    if (b.episode - a.episode === 0) {
+      if (a.title.endsWith("sideshow")) {
+        return -1;
+      }
+      return 1;
+    }
+
+    return b.episode - a.episode;
+  });
 }

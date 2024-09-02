@@ -15,7 +15,8 @@ export default function updateFrontmatter() {
       if (node.depth === 2) {
         visit(node, "text", (child) => {
           if (child.value === "Theme") {
-            description = tree.children[index + 1].children[0].value;
+            description = tree.children.at(index + 1).children.at(0).value;
+
             const startIndex = index + 1;
             const descriptionSegments = [];
 
