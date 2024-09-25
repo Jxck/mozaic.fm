@@ -1,37 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
+import Footer from "./_components/Footer";
+import Header from "./_components/Header";
 import { getEpisodes } from "./episodes/_utils/getEpisodes";
 
 export default async function Home() {
   const episodes = await getEpisodes();
-  // const tags = new Set(episodes.flatMap((episode) => episode.tags));
-
   return (
     <>
-      <header>
-        <div>
-          <a href="https://mozaic.fm" target="_blank" rel="noreferrer">
-            <Image
-              src="/mozaic.svg"
-              alt="mozaic logo"
-              width={100}
-              height={100}
-              priority
-            />
-          </a>
-        </div>
-        <search>
-          <form>
-            <label htmlFor="search">search</label>
-            <input
-              id="search"
-              type="text"
-              name="q"
-              placeholder="search episodes..."
-            />
-          </form>
-        </search>
-      </header>
+      <Header />
       <main>
         <section>
           <nav>
@@ -73,6 +49,7 @@ export default async function Home() {
           </ul>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
