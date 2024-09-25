@@ -1,5 +1,3 @@
-// webpackを通すと、まだnode:fs/promisesのglobが存在しないので、ライブラリを利用する
-// import { glob } from "glob";
 import type { Frontmatter } from "../_types/Frontmatter";
 
 export async function getEpisodes() {
