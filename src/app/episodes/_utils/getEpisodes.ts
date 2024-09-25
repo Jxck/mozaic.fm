@@ -1,9 +1,19 @@
 // webpackを通すと、まだnode:fs/promisesのglobが存在しないので、ライブラリを利用する
-import { glob } from "glob";
+// import { glob } from "glob";
 import type { Frontmatter } from "../_types/Frontmatter";
 
 export async function getEpisodes() {
-  const episodePaths = await glob("./src/app/episodes/_contents/**/*.mdx");
+  const episodePaths = [
+    "./src/app/episodes/_contents/150/monthly-ecosystem-202405.mdx",
+    "./src/app/episodes/_contents/151/monthly-platform-202405.mdx",
+    "./src/app/episodes/_contents/152/mozaic-renewal-202406.mdx",
+    "./src/app/episodes/_contents/153/mozaic-ecosystem-202406.mdx",
+    "./src/app/episodes/_contents/154/monthly-platform-202406.mdx",
+    "./src/app/episodes/_contents/155/mozaic-renewal-202407.mdx",
+    "./src/app/episodes/_contents/156/monthly-ecosystem-202407.mdx",
+    "./src/app/episodes/_contents/157/monthly-platform-202407.mdx",
+    "./src/app/episodes/_contents/158/monthly-ecosystem-202408.mdx",
+  ];
   const episodes = await Promise.all(
     episodePaths.map(async (path) => {
       const episodeMeta = path.match(/\/(?<ep>\d+)\/(?<file>[^/]+)\.mdx$/);
