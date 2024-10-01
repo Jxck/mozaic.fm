@@ -36,14 +36,27 @@ export default async function Home() {
         <section>
           <ul>
             {episodes.map((episode) => {
+              const guests = (
+                <ul>
+                  {Object.entries(episode.guests || []).map(([name, href]) => {
+                    return (
+                      <li key={name}>
+                        <a href={href}>@{name}</a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              );
+
               return (
-                <li key={episode.title}>
+                <div key={episode.title}>
                   <Link href={episode.path}>{episode.title}</Link>
+                  <div>guest: {guests}</div>
                   <p>{episode.description}</p>
                   <p>published_at: {episode.published_at}</p>
                   <button type="button">Detail</button>
                   <button type="button">Play</button>
-                </li>
+                </div>
               );
             })}
           </ul>
