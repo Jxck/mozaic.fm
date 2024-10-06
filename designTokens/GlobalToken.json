@@ -2,5 +2,27 @@
   "white": {
     "$type": "color",
     "$value": "#ffffff"
+  },
+  "gray": {
+    "100": {
+      "$type": "color",
+      "$value": "#cccccc"
+    },
+    "200": {
+      "$type": "color",
+      "$value": "#999999"
+    },
+    "300": {
+      "$type": "color",
+      "$value": "#666666"
+    },
+    "400": {
+      "$type": "color",
+      "$value": "#333333"
+    },
+    "500": {
+      "$type": "color",
+      "$value": "#000000"
+    }
   }
 }

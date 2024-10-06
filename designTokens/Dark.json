@@ -1,0 +1,6 @@
+{
+  "primary": {
+    "$type": "color",
+    "$value": "{gray.500}"
+  }
+}
