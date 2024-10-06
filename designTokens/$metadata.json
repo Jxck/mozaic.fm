@@ -1,5 +1,6 @@
 {
   "tokenSetOrder": [
-    "tokens"
+    "GlobalToken",
+    "Light"
   ]
 }

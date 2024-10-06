@@ -1,0 +1,6 @@
+{
+  "white": {
+    "$type": "color",
+    "$value": "#ffffff"
+  }
+}
