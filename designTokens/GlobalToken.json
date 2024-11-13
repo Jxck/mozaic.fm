@@ -90,6 +90,10 @@
       "normal": {
         "$type": "fontFamilies",
         "$value": "Inter"
+      },
+      "mono": {
+        "$type": "fontFamilies",
+        "$value": "Roboto Mono"
       }
     },
     "weight": {
