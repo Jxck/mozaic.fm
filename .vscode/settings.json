@@ -15,7 +15,7 @@
     "editor.defaultFormatter": "biomejs.biome"
   },
   "cSpell.enabled": true,
-  "cSpell.words": ["biomejs", "mozaic"],
+  "cSpell.words": ["biomejs", "mozaic", "mozaicfm"],
   "cSpell.allowCompoundWords": true,
   "cSpell.ignorePaths": ["**/node_modules/**"]
 }
