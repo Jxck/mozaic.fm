@@ -35,7 +35,7 @@ export default async function Home() {
         </section>
         <section>
           <ul>
-            {episodes.map((episode) => {
+            {/* {episodes.map((episode) => {
               const guests = (
                 <ul>
                   {Object.entries(episode.guests || []).map(([name, href]) => {
@@ -58,7 +58,7 @@ export default async function Home() {
                   <button type="button">Play</button>
                 </div>
               );
-            })}
+            })} */}
           </ul>
         </section>
       </main>
