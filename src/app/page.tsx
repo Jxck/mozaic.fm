@@ -1,10 +1,9 @@
-import Link from "next/link";
 import Footer from "./_components/Footer";
 import Header from "./_components/Header";
-import { getEpisodes } from "./episodes/_utils/getEpisodes";
+// import { getEpisodes } from "./episodes/_utils/getEpisodes";
 
 export default async function Home() {
-  const episodes = await getEpisodes();
+  // const episodes = await getEpisodes();
   return (
     <>
       <Header />
