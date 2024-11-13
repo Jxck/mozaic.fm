@@ -1,42 +1,14 @@
-import Image from "next/image";
-import { getEpisodes } from "./model/episodes";
-import styles from "./page.module.css";
+import Link from "next/link";
+import Footer from "./_components/Footer";
+import Header from "./_components/Header";
+import { getEpisodes } from "./episodes/_utils/getEpisodes";
 
 export default async function Home() {
-  const { title, description, episodes } = await getEpisodes();
+  const episodes = await getEpisodes();
   return (
     <>
-      <header>
-        <h1>{title}</h1>
-        <div>
-          <a href="https://mozaic.fm" target="_blank" rel="noreferrer">
-            <Image
-              src="/mozaic.svg"
-              alt="mozaic logo"
-              width={100}
-              height={100}
-              priority
-            />
-          </a>
-        </div>
-        <search>
-          <form>
-            <label htmlFor="search">search</label>
-            <input
-              id="search"
-              type="text"
-              name="q"
-              placeholder="search episodes..."
-            />
-          </form>
-        </search>
-      </header>
+      <Header />
       <main>
-        <section>
-          <p>
-            &gt; {description} by <a href="https://jxck.io">@jxck</a>
-          </p>
-        </section>
         <section>
           <nav>
             <ul>
@@ -64,19 +36,33 @@ export default async function Home() {
         <section>
           <ul>
             {episodes.map((episode) => {
+              const guests = (
+                <ul>
+                  {Object.entries(episode.guests || []).map(([name, href]) => {
+                    return (
+                      <li key={name}>
+                        <a href={href}>@{name}</a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              );
+
               return (
-                <li key={episode.url}>
-                  <a href={episode.url}>{episode.title}</a>
-                  <p>{episode.detail}</p>
+                <div key={episode.title}>
+                  <Link href={episode.path}>{episode.title}</Link>
+                  <div>guest: {guests}</div>
+                  <p>{episode.description}</p>
                   <p>published_at: {episode.published_at}</p>
                   <button type="button">Detail</button>
                   <button type="button">Play</button>
-                </li>
+                </div>
               );
             })}
           </ul>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
