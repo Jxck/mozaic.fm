@@ -18,7 +18,9 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN"
+    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN",
+    "build-style-dictionary": "style-dictionary build -c ./style-dictionary.config.js",
+    "token-transform": "token-transformer designTokens/tokens.json designTokens/_transformedTokens.json GlobalToken,SemanticToken/light,SemanticToken/dark --expandTypography"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
@@ -29,7 +31,10 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "remark-frontmatter": "^5.0.0",
-    "remark-mdx-frontmatter": "^5.0.0"
+    "remark-mdx-frontmatter": "^5.0.0",
+    "@tokens-studio/sd-transforms": "^1.2.3",
+    "style-dictionary": "^4.0.1",
+    "token-transformer": "^0.0.33"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.2",

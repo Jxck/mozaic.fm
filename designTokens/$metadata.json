@@ -1,0 +1,8 @@
+{
+  "tokenSetOrder": [
+    "GlobalToken",
+    "Light",
+    "Dark",
+    "components"
+  ]
+}

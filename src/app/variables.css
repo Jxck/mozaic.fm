@@ -1,0 +1,62 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --button-bg: var(--color-primary);
+  --primary: var(--color-gray-1000);
+  --border-radius-200: 8px;
+  --border-radius-150: 6px;
+  --border-radius-100: 4px;
+  --border-radius-50: 2px;
+  --space-700: 64px;
+  --space-600: 48px;
+  --space-500: 40px;
+  --space-400: 32px;
+  --space-300: 24px;
+  --space-250: 20px;
+  --space-200: 16px;
+  --space-150: 12px;
+  --space-100: 8px;
+  --space-50: 4px;
+  --font-size-700: 36px;
+  --font-size-600: 32px;
+  --font-size-500: 24px;
+  --font-size-400: 20px;
+  --font-size-300: 16px;
+  --font-size-200: 14px;
+  --font-size-100: 12px;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --font-family-normal: Helvetica;
+  --color-button-secondary-border: var(--color-gray-100);
+  --color-button-secondary-text: var(--color-gray-100);
+  --color-button-secondary-bg-hover: var(--color-gray-800);
+  --color-button-secondary-bg: var(--color-secondary);
+  --color-button-primary-border: var(--color-gray-1000);
+  --color-button-primary-text: var(--color-gray-1000);
+  --color-button-primary-bg-hover: var(--color-gray-300);
+  --color-button-primary-bg: var(--color-primary);
+  --color-primary: var(--color-gray-100);
+  --color-secondary: var(--color-gray-1000);
+  --color-blue-1000: #1c2b41;
+  --color-blue-900: #09326c;
+  --color-blue-800: #0055cc;
+  --color-blue-700: #0c66e4;
+  --color-blue-600: #1d7afc;
+  --color-blue-500: #388bff;
+  --color-blue-400: #579dff;
+  --color-blue-300: #85b8ff;
+  --color-blue-200: #cce0ff;
+  --color-blue-100: #e9f2ff;
+  --color-gray-1000: #000000;
+  --color-gray-900: #1c1c1c;
+  --color-gray-800: #383838;
+  --color-gray-700: #555555;
+  --color-gray-600: #717171;
+  --color-gray-500: #8d8d8d;
+  --color-gray-400: #aaaaaa;
+  --color-gray-300: #c6c6c6;
+  --color-gray-200: #e2e2e2;
+  --color-gray-100: #ffffff;
+}
