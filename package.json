@@ -2,8 +2,7 @@
   "name": "mozaicfm",
   "version": "0.1.2",
   "private": true,
-  "packageManager": "pnpm@9.7.1",
-  "type": "module",
+  "packageManager": "pnpm@9.11.0",
   "scripts": {
     "setup": "git config --local core.hooksPath .githooks && corepack enable pnpm",
     "dev": "next dev",
