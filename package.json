@@ -20,7 +20,8 @@
     "build-storybook": "storybook build",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN",
     "build-style-dictionary": "style-dictionary build -c ./style-dictionary.config.mjs",
-    "token-transform": "token-transformer designTokens/tokens.json designTokens/_transformedTokens.json GlobalToken,SemanticToken/light,SemanticToken/dark --expandTypography"
+    "token-transform": "token-transformer designTokens/tokens.json designTokens/_transformedTokens.json GlobalToken,SemanticToken/light,SemanticToken/dark --expandTypography",
+    "generate-episode-index": "node --experimental-strip-types ./scripts/generate-episode-index.mts"
   },
   "dependencies": {
     "@next/mdx": "^14.2.13",
