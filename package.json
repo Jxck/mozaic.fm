@@ -19,8 +19,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN",
-    "build-style-dictionary": "style-dictionary build -c ./style-dictionary.config.js --verbose",
-    "token-transform": "token-transformer designTokens/tokens.json designTokens/_transformedTokens.json GlobalToken,Semantic Token/light,Semantic Token/dark"
+    "build-style-dictionary": "style-dictionary build -c ./style-dictionary.config.js",
+    "token-transform": "token-transformer designTokens/tokens.json designTokens/_transformedTokens.json GlobalToken,SemanticToken/light,SemanticToken/dark --expandTypography"
   },
   "dependencies": {
     "@tokens-studio/sd-transforms": "^1.2.3",
