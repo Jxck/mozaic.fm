@@ -1,6 +1,12 @@
 {
   "primary": {
     "$type": "color",
-    "$value": "{white}"
+    "$value": "{color.gray.1000}"
+  },
+  "button": {
+    "bg": {
+      "$type": "color",
+      "$value": "{color.primary}"
+    }
   }
 }

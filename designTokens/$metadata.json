@@ -2,6 +2,7 @@
   "tokenSetOrder": [
     "GlobalToken",
     "Light",
-    "Dark"
+    "Dark",
+    "components"
   ]
 }

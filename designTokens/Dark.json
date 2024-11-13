@@ -1,6 +1,50 @@
 {
-  "primary": {
-    "$type": "color",
-    "$value": "{gray.500}"
+  "color": {
+    "secondary": {
+      "$type": "color",
+      "$value": "{color.gray.1000}"
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "{color.gray.100}"
+    },
+    "button": {
+      "primary": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.primary}"
+        },
+        "bg--hover": {
+          "$type": "color",
+          "$value": "{color.gray.300}"
+        },
+        "text": {
+          "$type": "color",
+          "$value": "{color.gray.1000}"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.gray.1000}"
+        }
+      },
+      "secondary": {
+        "bg": {
+          "$type": "color",
+          "$value": "{color.secondary}"
+        },
+        "bg--hover": {
+          "$type": "color",
+          "$value": "{color.gray.800}"
+        },
+        "text": {
+          "$type": "color",
+          "$value": "{color.gray.100}"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{color.gray.100}"
+        }
+      }
+    }
   }
 }
