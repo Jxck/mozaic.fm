@@ -10,7 +10,6 @@ const sd = new StyleDictionary({
   // be careful about accidentally matching your package.json or similar files that are not tokens
   source: [
     "designTokens/GlobalToken.json",
-    "designTokens/Light.json",
     "designTokens/Dark.json",
   ],
 
