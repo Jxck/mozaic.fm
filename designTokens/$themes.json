@@ -8,8 +8,7 @@
       "primary": "S:7be20c7d3e216ffb16284bd699cadad78c8106e9,"
     },
     "selectedTokenSets": {
-      "Light": "enabled",
-      "components": "disabled"
+      "Light": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:492:1777",
     "$figmaModeId": "492:3",
@@ -34,8 +33,7 @@
       "color.button.secondary.border": "S:5a4eaf8efbb89f6a20bd03bf588f1443b0e67a1f,"
     },
     "selectedTokenSets": {
-      "Dark": "enabled",
-      "components": "disabled"
+      "Dark": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:492:1778",
     "$figmaModeId": "492:4",

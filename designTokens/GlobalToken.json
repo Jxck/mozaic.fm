@@ -89,7 +89,7 @@
     "family": {
       "normal": {
         "$type": "fontFamilies",
-        "$value": "Helvetica"
+        "$value": "Inter"
       }
     },
     "weight": {
