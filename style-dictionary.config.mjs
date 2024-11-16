@@ -8,10 +8,7 @@ register(StyleDictionary);
 const sd = new StyleDictionary({
   // make sure to have source match your token files!
   // be careful about accidentally matching your package.json or similar files that are not tokens
-  source: [
-    "designTokens/GlobalToken.json",
-    "designTokens/Dark.json",
-  ],
+  source: ["designTokens/GlobalToken.json", "designTokens/Dark.json"],
 
   preprocessors: ["tokens-studio"], // <-- since 0.16.0 this must be explicit
   expand: {
